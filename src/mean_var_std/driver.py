@@ -4,7 +4,7 @@ import numpy as np
 from util import calculate_mean,calculate_variance,calculate_std_deviation
 import logging
 
-# Configure logger
+# Configure loggerr
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
