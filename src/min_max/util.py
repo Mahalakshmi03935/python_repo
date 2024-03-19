@@ -1,5 +1,4 @@
-import numpy as np
-import logging
+import numpy as np,logging
 logging.basicConfig(level=logging.DEBUG, format='%(message)s')
 logger = logging.getLogger(__name__)
 
