@@ -1,7 +1,12 @@
 import numpy as np
+import logging
+
+logger = logging.getLogger(__name__)
 
 def calculate_mean(array, axis=None):
-    return np.mean(array, axis=axis)
+    mean = np.mean(array, axis=axis)
+    logger.info("Mean along axis %s: %s", axis, mean)
+    return mean
 
 def calculate_variance(array, axis=None):
     return np.var(array, axis=axis)
