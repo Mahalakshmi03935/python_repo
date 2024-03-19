@@ -1,17 +1,21 @@
 import logging
 
+logging.basicConfig(level=logging.DEBUG, format="%(message)s")
+def word_order():
+    n = int(input("Enter the length of the words: "))
 
-def count_word_occurrences(n, words):
-    logging.info("Counting word occurrences...")
-
-    word_count = {}
-    for word in words:
-        if word in word_count:
-            word_count[word] += 1
+    word=[]
+    count=[]
+    for i in range(n):
+        w=input("Enter the word: ")
+        if w not in word:
+            word.append(w)
+            count.append(1)
         else:
-            word_count[word] = 1
-
-    distinct_words = list(word_count.keys())
-    occurrences = [word_count[word] for word in distinct_words]
-
-    return distinct_words, occurrences
+            count[word.index(w)]+=1
+    res = ""
+    for i in count:
+        res += str(i) + " "
+    logging.debug(len(count))
+    logging.debug(res)
+    return len(count),res
