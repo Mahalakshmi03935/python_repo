@@ -8,5 +8,3 @@ def min_max_operation(array):
     max_min_value = np.max(min_value)
     logger.debug("Max of Min Values along axis None: %d", max_min_value)
     return max_min_value
-
-
