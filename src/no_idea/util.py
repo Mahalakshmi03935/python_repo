@@ -1,6 +1,6 @@
 import logging
 
-
+#defining the function
 def calculate_happiness(n, m, arr, a, b):
     happiness = 0
     happy_set = set(a)
