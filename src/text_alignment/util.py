@@ -1,39 +1,37 @@
 import logging
 
-logging.basicConfig(level=logging.DEBUG, format='%(message)s')
-logger = logging.getLogger(__name__)
 
-def generate_hackerrank_logo(thickness):
-    if thickness % 2 == 0:
-        raise ValueError("Thickness must be an odd number")
+def text_alignment(thickness):
+    c = 'H'
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
+    ans = ''
 
-    logo = ''
-    width = thickness * 3
-
-    # Top Cone
     for i in range(thickness):
-        line = 'H' * (2 * i + 1)
-        logo += line.center(width, '-') + '\n'
+        logging.info((c * i).rjust(thickness - 1) + c + (c * i).ljust(thickness - 1))
+        ans += (c * i).rjust(thickness - 1) + c + (c * i).ljust(thickness - 1)
+        ans += '\n'
 
-    # Top Pillars
+
     for i in range(thickness + 1):
-        line = ('H' * thickness).center(thickness * 2, ' ')
-        logo += line + line + '\n'
+        logging.info((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
+        ans += (c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6)
+        ans += '\n'
 
-    # Middle Belt
+
     for i in range((thickness + 1) // 2):
-        logo += ('H' * thickness * 5).center(thickness * 6, ' ') + '\n'
+        logging.info((c * thickness * 5).center(thickness * 6))
+        ans += (c * thickness * 5).center(thickness * 6)
+        ans += '\n'
 
-    # Bottom Pillars
+
     for i in range(thickness + 1):
-        line = ('H' * thickness).center(thickness * 2, ' ')
-        logo += line + line + '\n'
+        logging.info((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
+        ans += (c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6)
+        ans += '\n'
 
-    # Bottom Cone
+
     for i in range(thickness):
-        line = 'H' * (2 * (thickness - i) - 1)
-        logo += line.center(width, '-') + '\n'
-
-    logger.info("Generated HackerRank logo with thickness: %d", thickness)
-    return logo
-
+        logging.info(((c * (thickness - i - 1)).rjust(thickness) + c + (c * (thickness - i - 1)).ljust(thickness)).rjust(thickness * 6))
+        ans += ((c * (thickness - i - 1)).rjust(thickness) + c + (c * (thickness - i - 1)).ljust(thickness)).rjust(thickness * 6)
+        ans += '\n'
+    return ans
