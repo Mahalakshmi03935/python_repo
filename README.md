@@ -1,4 +1,4 @@
-This repository contains the Python programs
+**Python Repo**:This repository contains the Python programs
 **1.Percentage_Problem:**
 
 **Files:**
@@ -20,3 +20,4 @@ Returns the calculated average marks for the specified student.
 
 **Modules Used:**
 **logging**: Utilized for basic logging functionalities such as displaying debug messages.
+
