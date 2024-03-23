@@ -142,7 +142,7 @@ Returns the floor, ceiling, and rounding values as numpy arrays.
 **logging:** Utilized for basic logging functionalities such as displaying information about the calculated values.
 **numpy:** Imported to perform mathematical operations and array manipulations efficiently.
 
-8.Python_string_formatting: Formats numbers in decimal, octal, hexadecimal, and binary representations.
+**8.Python_string_formatting:** Formats numbers in decimal, octal, hexadecimal, and binary representations.
 
 **Files:**
 
