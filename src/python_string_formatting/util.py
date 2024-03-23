@@ -1,7 +1,7 @@
 import logging
 logging.basicConfig(level=logging.INFO,format="%(message)s")
 def string_formatting():
-    # your code goes here
+
     result=''
     n = int(input())
     spacing=len("{0:b}".format(n))
