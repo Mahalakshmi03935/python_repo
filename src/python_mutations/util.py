@@ -1,5 +1,5 @@
 import logging
-logging.basicConfig(level=logging.DEBUG, format="%(message)s" )
+logging.basicConfig(level=logging.DEBUG, format="%(message)s")
 def mutate_string():
     string = input("Enter the string: ")
     position, character = input("enter the position and character: ").split()
