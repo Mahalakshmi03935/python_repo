@@ -23,7 +23,7 @@ Returns the calculated average marks for the specified student.
 **Modules Used:**
 **logging**: Utilized for basic logging functionalities such as displaying debug messages.
 
-`**2.Word_Order:**`
+**`2.Word_Order:**
 Allows users to input a list of words and counts the occurrences of each unique word.
 
 **Files:**
