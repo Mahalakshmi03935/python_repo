@@ -1,5 +1,5 @@
 import logging
-logging.basicConfig(level=logging.DEBUG, format="%(message)s" )
+logging.basicConfig(level=logging.DEBUG, format="%(message)s")
 
 def student_marks():
     n = int(input("Enter the number of students? "))
