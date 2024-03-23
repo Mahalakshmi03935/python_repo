@@ -42,7 +42,7 @@ Returns the count of unique words and their respective occurrences as a string.
 **Modules used:**
 **logging:** Utilized for basic logging functionalities such as displaying debug messages.
 
-3.Time_delta:
+**3.Time_delta:**
  Computes the time difference in seconds between two datetime strings.
 
 **Files:**
@@ -66,7 +66,7 @@ Returns the time difference as an integer.
 
 **datetime:** Imported to work with datetime objects and perform datetime operations.
 
-4.Text_alignment:Generates a pattern of text aligned in various ways using a specified character and thickness.
+**4.Text_alignment**:Generates a pattern of text aligned in various ways using a specified character and thickness.
 
 **Files:**
 
@@ -100,3 +100,24 @@ If there are less than two scores or less than two unique scores, it returns Non
 
 **Modules:**
 logging: Utilized for basic logging functionalities such as displaying debug messages.
+
+**6.Calendar_module**:Determines the day of the week for a specified date
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+
+**find_day():**
+Accepts input in the format mm dd yyyy (month, day, year).
+Utilizes the calendar module to find the day of the week for the provided date.
+Returns the day of the week as a string.
+
+Modules used:
+
+**logging:** Utilized for basic logging functionalities such as displaying information about the found day.
+
+**calendar:** Imported to work with date-related functionalities, specifically to find the day of the week.
