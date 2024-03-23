@@ -1,6 +1,6 @@
 **Python Repo**:This repository contains the Python programs
 
-**1.Percentage_Problem:**
+`**1.Percentage_Problem:**`
 Allows users to input the number of students and their corresponding marks and Computes the average marks for a given student.
 
 **Files:**
