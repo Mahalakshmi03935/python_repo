@@ -116,8 +116,65 @@ Accepts input in the format mm dd yyyy (month, day, year).
 Utilizes the calendar module to find the day of the week for the provided date.
 Returns the day of the week as a string.
 
-Modules used:
+**Modules used:**
 
 **logging:** Utilized for basic logging functionalities such as displaying information about the found day.
 
 **calendar:** Imported to work with date-related functionalities, specifically to find the day of the week.
+
+**7.Floor_Ceiling_rint**: Computes the floor, ceiling, and rint values of elements in a given array.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+
+**floor_ceil_rint():**
+Accepts input array elements separated by space.
+Utilizes the numpy module to calculate the floor, ceiling, and rounding values of the array elements.
+Returns the floor, ceiling, and rounding values as numpy arrays.
+
+**Modules used:**
+
+**logging:** Utilized for basic logging functionalities such as displaying information about the calculated values.
+**numpy:** Imported to perform mathematical operations and array manipulations efficiently.
+
+8.Python_string_formatting: Formats numbers in decimal, octal, hexadecimal, and binary representations.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+
+**string_formatting():**
+Accepts an integer n as input.
+Calculates the spacing required for formatting based on the binary representation of n.
+Formats numbers from 1 to n in decimal, octal, hexadecimal, and binary representations with proper spacing.
+Returns the formatted string.
+
+**Modules used:**
+**logging**: Utilized for basic logging functionalities such as displaying formatted strings.
+
+9.**Python_mutations:** Replaces a character at a specified position in a given string.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+
+**mutate_string():**
+Prompts the user to input a string and the position along with the character to replace.
+Replaces the character at the specified position in the string.
+Returns the mutated string.
+
+**Modules used:**
+**logging:** Utilized for basic logging functionalities such as displaying debug messages.
