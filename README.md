@@ -1,6 +1,6 @@
 **Python Repo**:This repository contains the Python programs
 
-`**1.Percentage_Problem:**`
+``**1.Percentage_Problem:**`
 Allows users to input the number of students and their corresponding marks and Computes the average marks for a given student.
 
 **Files:**
@@ -23,7 +23,7 @@ Returns the calculated average marks for the specified student.
 **Modules Used:**
 **logging**: Utilized for basic logging functionalities such as displaying debug messages.
 
-**2.Word_Order:**
+`**2.Word_Order:**`
 Allows users to input a list of words and counts the occurrences of each unique word.
 
 **Files:**
