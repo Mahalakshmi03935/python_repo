@@ -1,16 +1,21 @@
-import numpy as np
 import logging
+import numpy as np
 
-logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def calculate_mean(array, axis=None):
-    mean = np.mean(array, axis=axis)
-    logger.info("Mean along axis %s: %s", axis, mean)
-    return mean
+def calculate_mean_var_std():
+    X, Y = map(int, input().split())
+    arr = []
+    for _ in range(X):
+        arr.append(list(map(int, input().split())))
 
-def calculate_variance(array, axis=None):
-    return np.var(array, axis=axis)
+    mean = np.mean(arr, axis=1)
+    var = np.var(arr, axis=1)
+    std = np.std(arr, axis=1)
 
-def calculate_std_deviation(array, axis=None):
-    return np.std(array, axis=axis)
+    logging.debug(mean)
+    logging.debug(var)
+    logging.debug(std)
+
+    return mean, var, std
 
