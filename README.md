@@ -200,7 +200,7 @@ Returns the minimum of the maximum values.
 
 **numpy:** Imported to work with arrays and perform mathematical operations efficiently.
 
-11.Linear_algebra:Computes the determinant of a square matrix.
+**11.Linear_algebra:** Computes the determinant of a square matrix.
 
 **Files:**
 
