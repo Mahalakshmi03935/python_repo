@@ -1,20 +1,13 @@
 import logging
+logging.basicConfig(level=logging.DEBUG, format="%(message)s" )
+def calculate_happiness():
+    a = input()
+    b = list(map(int, input().split(" ")))
+    A = list(map(int, input().split(" ")))
+    B = list(map(int, input().split(" ")))
 
-#defining the function
-def calculate_happiness(n, m, arr, a, b):
-    happiness = 0
-    happy_set = set(a)
-    unhappy_set = set(b)
-
-    for num in arr:
-        if num in happy_set:
-            happiness += 1
-        elif num in unhappy_set:
-            happiness -= 1
-
-    return happiness
-
-
-def setup_logger():
-    logging.basicConfig(level=logging.INFO)
-    return logging.getLogger(__name__)
+    A.sort()
+    B.sort()
+    happiness = sum([A[i] == b[i] for i in range(len(A))]) - sum([B[i] == b[i] for i in range(len(B))])
+    logging.debug(happiness)
+    return abs(happiness)
