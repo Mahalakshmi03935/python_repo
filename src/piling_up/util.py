@@ -1,35 +1,28 @@
-# util.py
-import logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+def can_stack_cubes(num_cubes, cube_lengths):
+    left = 0
+    right = num_cubes - 1
+    prev_cube = float('inf')
 
-def can_stack_cubes(test_cases):
-    results = []
-
-    for cubes in test_cases:
-        left, right = 0, len(cubes) - 1
-        prev_cube = float('inf')
-        possible = True
-
-        while left <= right:
-            if cubes[left] >= cubes[right]:
-                if cubes[left] <= prev_cube:
-                    prev_cube = cubes[left]
-                    left += 1
-                else:
-                    possible = False
-                    break
-            else:
-                if cubes[right] <= prev_cube:
-                    prev_cube = cubes[right]
-                    right -= 1
-                else:
-                    possible = False
-                    break
-
-        if possible:
-            results.append("Yes")
+    while left <= right:
+        if cube_lengths[left] > cube_lengths[right]:
+            current_cube = cube_lengths[left]
+            left += 1
         else:
-            results.append("No")
+            current_cube = cube_lengths[right]
+            right -= 1
 
-    return results
+        if current_cube > prev_cube:
+            return "No"
+
+        prev_cube = current_cube
+
+    return "Yes"
+
+
+def main():
+    num_test_cases = int(input().strip())
+
+    for _ in range(num_test_cases):
+        num_cubes = int(input().strip())
+        cube_lengths = list(map(int, input().strip().split()))
+        print(can_stack_cubes(num_cubes, cube_lengths))
