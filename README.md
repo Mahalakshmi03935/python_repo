@@ -178,3 +178,186 @@ Returns the mutated string.
 
 **Modules used:**
 **logging:** Utilized for basic logging functionalities such as displaying debug messages.
+
+10.**Min_Max:** Identifies the minimum of the maximum values in rows of a 2D array.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+
+**min_max_num():**
+Accepts input for the dimensions of the 2D array and its elements.
+Utilizes the numpy module to create a numpy array from the input data.
+Computes the maximum values in each row and then finds the minimum among them.
+Returns the minimum of the maximum values.
+
+**Modules used:**
+**logging:** Utilized for basic logging functionalities such as displaying information about the minimum of maximum values.
+
+**numpy:** Imported to work with arrays and perform mathematical operations efficiently.
+
+11.Linear_algebra:Computes the determinant of a square matrix.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+**linear_algebra():**
+Accepts input for the dimensions of the square matrix and its elements.
+Utilizes the numpy module to create a numpy array from the input data.
+Calculates the determinant of the square matrix using NumPy's linear algebra module.
+Returns the determinant rounded to two decimal places.
+
+**Modules used:**
+**logging:** Utilized for basic logging functionalities such as displaying information about the calculated determinant.
+
+**numpy:** Imported to perform linear algebra operations efficiently.
+
+**12.Py_collections:** Computes the average of a specific column in a dataset using namedtuple.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+**calculate_average():**
+Accepts input for the number of records (n) and the column names.
+Utilizes namedtuple to create a structured representation of each record.
+Calculates the total marks from the specified column for n records.
+Returns the average of the specified column.
+
+**Modules used:**
+**logging:** Utilized for basic logging functionalities such as displaying debug messages with timestamps and levels.
+
+**collections.namedtuple**: Imported to create a lightweight object-oriented structure for representing records.
+
+**13.Mean_var_std:**  Computes the mean, variance, and standard deviation along each row of a 2D array.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+
+**Functions used:**
+**calculate_mean_var_std():**
+Accepts input for the dimensions of the 2D array and its elements.
+Utilizes the numpy module to create a numpy array from the input data.
+Calculates the mean, variance, and standard deviation along each row of the array.
+Returns three arrays containing the mean, variance, and standard deviation values.
+
+**Modules used:**
+
+**logging:** Utilized for basic logging functionalities such as displaying debug messages with timestamps and levels.
+
+**numpy:** Imported to perform mathematical operations and array manipulations efficiently.
+
+**14.Merge_the_tools:** Splits a string into substrings of a specified length and removes duplicate characters within each substring.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+**merge_the_tools():**
+Prompts the user to input a string and a factor value.
+Splits the string into substrings of length k.
+Removes duplicate characters within each substring.
+Returns a string containing the modified substrings separated by newlines.
+
+**Modules used:**
+**logging:** Utilized for basic logging functionalities such as displaying debug messages.
+
+**15.No_idea:** Calculates happiness based on given arrays and a reference array.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+
+**calculate_happiness():**
+Accepts input arrays a, A, and B.
+Sorts arrays A and B.
+Calculates happiness by comparing elements of arrays A and B with the corresponding elements in array b.
+Returns the absolute value of the calculated happiness.
+
+**Modules used:**
+logging: Utilized for basic logging functionalities such as displaying debug messages.
+
+**16.Iterators_problem :**  Determines the probability of selecting combinations containing a specified element.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+**iterators():**
+Accepts input for the total number of elements, a list of elements, and the size of combinations to consider.
+Computes all possible combinations of the given elements.
+Calculates the probability of selecting combinations containing a specified element "a".
+Returns the probability as a floating-point value.
+
+**Modules used:**
+
+**logging:** Utilized for basic logging functionalities such as displaying debug messages.
+
+**itertools.combinations:** Imported to generate combinations of elements efficiently.
+
+**17.Piling_up:** Checks if a stack of cubes can be formed with given cube lengths.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+**can_stack_cubes(num_cubes, cube_lengths):**
+Accepts the number of cubes and a list of cube lengths as input.
+Determines if it's possible to form a stack of cubes based on the given lengths.
+Returns "Yes" if a stack can be formed, otherwise "No".
+
+**Main Function:**
+**main():**
+Accepts input for the number of test cases.
+For each test case, it inputs the number of cubes and their lengths, then calls can_stack_cubes() function.
+Prints the result indicating whether a stack of cubes can be formed for each test case.
+
+**18.email_address:**  Validates email addresses and sorts them in lexicographical order.
+
+**Files:**
+
+util.py: Contains the main functions for managing student marks.
+
+driver.py: Entry point script for executing the program
+
+**Functions used:**
+**is_valid_email(email):** Validates the given email address using regular expressions.
+Returns True if the email address is valid, otherwise False.
+function():Accepts input for the number of email addresses (n) and the email addresses themselves (s).
+Extracts the email addresses from the input string.
+Filters and sorts the valid email addresses in lexicographical order.
+Returns a list of sorted valid email addresses.
+
+**Modules used:**
+
+**re:** Utilized for regular expression operations to validate email addresses.
+
+**logging:** Utilized for basic logging functionalities such as displaying debug messages.
