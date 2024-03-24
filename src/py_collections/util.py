@@ -1,13 +1,13 @@
-from datetime import datetime, timedelta
 import logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+from collections import namedtuple
+def calculate_average():
+    n = int(input())
+    columns = input().split()
+    Student = namedtuple('Student', columns)
+    marks_index = columns.index('MARKS')
+    total_marks = sum(int(input().split()[marks_index]) for _ in range(n))
+    return total_marks / n
+logging.debug('{:.2f}'.format(calculate_average()))
 
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-def get_time_difference_in_seconds(time1, time2):
-    dt_format = '%a %d %b %Y %H:%M:%S %z'
-    timestamp1 = datetime.strptime(time1, dt_format)
-    timestamp2 = datetime.strptime(time2, dt_format)
-    difference = abs(timestamp1 - timestamp2).total_seconds()
-    return int(difference)
 
