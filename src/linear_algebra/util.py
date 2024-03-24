@@ -1,18 +1,12 @@
-import numpy as np
+import numpy
 import logging
 
-logging.basicConfig(level=logging.DEBUG, format='%(message)s')
-logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO ,format='%(message)s')
 
-def find_determinant(matrix):
-    det = np.linalg.det(matrix)
-    logger.info(f"Determinant of the matrix: {det:.2f}")
-    return round(det, 2)
-
-def parse_input():
-    n = int(input("Enter the dimension of the square matrix: "))
-    matrix = []
-    for _ in range(n):
-        row = list(map(float, input().split()))
-        matrix.append(row)
-    return matrix
+def linear_algebra():
+    a=int(input())
+    arr = []
+    for _ in range(a):
+        arr.append(list(map(float, input().split())))
+    logging.info(round(numpy.linalg.determinant(arr), 2))
+    return (round(numpy.linalg.determinant(arr), 2))
